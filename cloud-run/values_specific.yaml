@@ -1,0 +1,10 @@
+image: eu-docker.pkg.dev/cloudrun/container/frita:batatinha
+env:
+  - name: SAMPLE_ENV
+    value: anyvalue
+  # Secret reference. Secrets Manager secret have to be created
+  - name: TEST_SECRET
+    valueFrom:
+      secretKeyRef:
+        key: "1"
+        name: "demo-secret"
