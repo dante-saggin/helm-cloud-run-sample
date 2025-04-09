@@ -11,6 +11,6 @@ Authenticate to google cloud using gcloud
 
 Replace the cloud run
 
-> gcloud run services replace service.yaml
+> gcloud run services replace service.yaml --project_id=$Project_ID
 
 Based on [Leveraging Helm for Cloud Run deployments on Google Cloud Platform](https://medium.com/@dr.daler.boboev/leveraging-helm-for-cloud-run-deployments-on-google-cloud-platform-fc044438f2ce)
